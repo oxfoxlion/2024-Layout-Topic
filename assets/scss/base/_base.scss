@@ -1,0 +1,33 @@
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    position: relative;
+    line-height: 1.2;
+}
+
+img{
+    max-width:100%; /*設定為父元素的寬度*/
+    height:auto;
+    display:block; /*移除圖片下方多餘空間*/
+    }
+
+*,*:before,*:after{
+    box-sizing:border-box;
+    }
+
+    @mixin smaill{
+        @media (min-width:567px) {
+            @content;
+        }
+    }
+    
+    @mixin medium{
+        @media (min-width:768px) {
+            @content;
+        }
+    }
+    
+    @mixin large{
+        @media (min-width:992px) {
+            @content;
+        }
+    }

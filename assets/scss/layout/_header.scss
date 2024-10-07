@@ -1,4 +1,10 @@
 .header{
-  background: #69F0AE;
-  font-size: 64px;
+  z-index: 10;
+  background-image:url(/assets/images/Header/BG3.png);
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  position: absolute;
+  width: 100%;
+  top:0;
 }

@@ -46,6 +46,8 @@ $yellow:  #ffc107 !default;
 $green:   #198754 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
+$qishi:   #7F3B3C !default;
+$neutral: #C6C6C6 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -63,7 +65,9 @@ $colors: (
   "black":      $black,
   "white":      $white,
   "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "gray-dark":  $gray-800,
+  "qishi":      $qishi,
+
 ) !default;
 // scss-docs-end colors-map
 
@@ -176,6 +180,16 @@ $cyan-700: shade-color($cyan, 40%) !default;
 $cyan-800: shade-color($cyan, 60%) !default;
 $cyan-900: shade-color($cyan, 80%) !default;
 
+$qishi-100: tint-color($qishi, 80%) !default;
+$qishi-200: tint-color($qishi, 60%) !default;
+$qishi-300: tint-color($qishi, 40%) !default;
+$qishi-400: tint-color($qishi, 20%) !default;
+$qishi-500: $qishi !default;
+$qishi-600: shade-color($qishi, 20%) !default;
+$qishi-700: shade-color($qishi, 40%) !default;
+$qishi-800: shade-color($qishi, 60%) !default;
+$qishi-900: shade-color($qishi, 80%) !default;
+
 $blues: (
   "blue-100": $blue-100,
   "blue-200": $blue-200,
@@ -284,21 +298,21 @@ $teals: (
   "teal-900": $teal-900
 ) !default;
 
-$cyans: (
-  "cyan-100": $cyan-100,
-  "cyan-200": $cyan-200,
-  "cyan-300": $cyan-300,
-  "cyan-400": $cyan-400,
-  "cyan-500": $cyan-500,
-  "cyan-600": $cyan-600,
-  "cyan-700": $cyan-700,
-  "cyan-800": $cyan-800,
-  "cyan-900": $cyan-900
+$qishis: (
+  "qishi-100": $qishi-100,
+  "qishi-200": $qishi-200,
+  "qishi-300": $qishi-300,
+  "qishi-400": $qishi-400,
+  "qishi-500": $qishi-500,
+  "qishi-600": $qishi-600,
+  "qishi-700": $qishi-700,
+  "qishi-800": $qishi-800,
+  "qishi-900": $qishi-900
 ) !default;
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $green !default;
+$primary:       $qishi !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -317,7 +331,7 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -414,7 +428,8 @@ $spacers: (
   2: $spacer * .5,
   3: $spacer,
   4: $spacer * 1.5,
-  5: $spacer * 3,
+  5: $spacer *2,
+  6: $spacer * 3,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -603,7 +618,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      "Noto Sans TC",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -623,19 +638,29 @@ $font-weight-medium:          500 !default;
 $font-weight-semibold:        600 !default;
 $font-weight-bold:            700 !default;
 $font-weight-bolder:          bolder !default;
+$font-weight-black:           900 !default;
 
 $font-weight-base:            $font-weight-normal !default;
 
 $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
+$line-height-petit:           1.2 !default;
 $line-height-lg:              2 !default;
+$line-height-bigger:           4 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
+
+$h1-font-size:                $font-size-base * 4 !default;
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
+// $h1-font-size:                $font-size-base * 2.5 !default;
+// $h2-font-size:                $font-size-base * 2 !default;
+// $h3-font-size:                $font-size-base * 1.75 !default;
+// $h4-font-size:                $font-size-base * 1.5 !default;
+// $h5-font-size:                $font-size-base * 1.25 !default;
+// $h6-font-size:                $font-size-base !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
