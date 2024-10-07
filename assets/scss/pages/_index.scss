@@ -83,3 +83,13 @@
     transform: translate(-50%, -50%);
   }
 }
+
+.participatePic{
+  width: 106px;
+  height: 106px;
+
+  @include medium{
+    width: 232px;
+    height: 232px;
+  }
+}
