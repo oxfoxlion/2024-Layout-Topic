@@ -93,3 +93,77 @@
     height: 232px;
   }
 }
+
+.pickOne{
+  position: relative;
+  &::before{
+    content: "";
+    width: 100%;
+    height: 50%;
+    background: $brand04;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+
+}
+
+.favorate{
+  width: 44px;
+  height: 44px;
+  background-color: #1E1E1E66;
+  display: none !important;
+  @include large{
+    display: inline !important; 
+  }
+
+  .true{
+    display: none;
+  }
+
+  &:hover{
+    background-color:#1E1E1EB2;
+  }
+
+  &:focus{
+    background-color: $brand02;
+    .false{
+      display: none;
+    }
+    .true{
+      display: inline;
+    }
+  }
+
+  &:focus:hover{
+    background-color: $brand06;
+  }
+
+  
+
+}
+
+.cardBox{
+  gap: 16px 0;
+  @include large{
+   gap: 0;
+  }
+}
+
+.addShoppingCart{
+  width: 80%;
+  position: absolute;
+  top:-15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.productCard{
+  @include large{
+    &:hover .addShoppingCart{
+      display: flex;
+    }
+  }
+}
