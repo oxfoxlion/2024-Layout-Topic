@@ -51,6 +51,7 @@ $neutral: #C6C6C6 !default;
 $brand04: #FFFAEB !default;
 $brand02: #F0B600 !default;
 $brand06: #BF9000 !default;
+$gray-04: #F5F5F5 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -323,6 +324,7 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+$neutral04:    $gray-04 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
