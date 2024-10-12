@@ -8,3 +8,17 @@
   width: 100%;
   top:0;
 }
+
+.brand-img{
+  width: 80px;height: auto;
+  @include large{
+    width: 120px;
+  }
+}
+
+.navbar-gap{
+  gap:30px;
+  @include large{
+    gap:56px;
+  }
+}
