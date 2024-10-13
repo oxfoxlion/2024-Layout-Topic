@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>其時手工甜點-產品列表</title>
-    <script type="module" crossorigin src="/2024-Layout-Topic/assets/main-439c207f.js"></script>
+    <script type="module" crossorigin src="/2024-Layout-Topic/assets/main-a47f144c.js"></script>
     <link rel="stylesheet" href="/2024-Layout-Topic/assets/main-212517ae.css">
   </head>
   <body>
@@ -27,12 +27,19 @@
             </ul>
             <ul class="navbar-nav mb-2 mb-lg-0 gap-2 flex-row ms-lg-auto">
                 <li class="nav-item">
-                  <a class="nav-link font-weight-medium text-white p-2 hoverUp" href="shoppingCart.html"><span class="material-symbols-outlined">
+                  <a  class="nav-link font-weight-medium text-white p-0 hoverUp position-relative d-flex justify-content-center align-items-center" href="shoppingCart.html" id="toCart" style="width: 44px;height: 44px;">
+                    <span class="material-symbols-outlined">
                     shopping_cart
+                    </span>
+                    
+                    <span class="position-absolute translate-middle badge rounded-pill bg-warning" id="cartBadge" style="top:7px;left:32px;">
+                      0
+                      <span class="visually-hidden">cart items</span>
                     </span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-medium text-white p-2 hoverUp" href="member.html"><span class="material-symbols-outlined">
+                  <a class="nav-link font-weight-medium text-white p-0 hoverUp d-flex justify-content-center align-items-center" href="member.html" style="width: 44px;height: 44px;">
+                    <span class="material-symbols-outlined">
                     person
                     </span></a>
                 </li>

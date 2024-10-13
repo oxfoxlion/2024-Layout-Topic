@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script type="module" crossorigin src="/2024-Layout-Topic/assets/main-439c207f.js"></script>
+    <script type="module" crossorigin src="/2024-Layout-Topic/assets/main-a47f144c.js"></script>
     <link rel="stylesheet" href="/2024-Layout-Topic/assets/main-212517ae.css">
   </head>
   <body>
@@ -32,12 +32,19 @@
             </ul>
             <ul class="navbar-nav mb-2 mb-lg-0 gap-2 flex-row ms-lg-auto">
                 <li class="nav-item">
-                  <a class="nav-link font-weight-medium text-white p-2 hoverUp" href="shoppingCart.html"><span class="material-symbols-outlined">
+                  <a  class="nav-link font-weight-medium text-white p-0 hoverUp position-relative d-flex justify-content-center align-items-center" href="shoppingCart.html" id="toCart" style="width: 44px;height: 44px;">
+                    <span class="material-symbols-outlined">
                     shopping_cart
+                    </span>
+                    
+                    <span class="position-absolute translate-middle badge rounded-pill bg-warning" id="cartBadge" style="top:7px;left:32px;">
+                      0
+                      <span class="visually-hidden">cart items</span>
                     </span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link font-weight-medium text-white p-2 hoverUp" href="member.html"><span class="material-symbols-outlined">
+                  <a class="nav-link font-weight-medium text-white p-0 hoverUp d-flex justify-content-center align-items-center" href="member.html" style="width: 44px;height: 44px;">
+                    <span class="material-symbols-outlined">
                     person
                     </span></a>
                 </li>
@@ -113,18 +120,18 @@
           </div>
           <div class="row cardBox">
             <div class="col-lg-3 col-6">
-              <div class="card bg-transparent h-100 productCard border-0">
+              <div class="card bg-transparent h-100 productCard border-0 hoverUp">
                 <div class="card-img-container rounded-top-circle overflow-hidden border-neutral04 border border-bottom-0 border-2">
                   <img src="/2024-Layout-Topic/assets/原味-1eb35c7b.jpg" class="card-img-top" alt="經典原味">
                 </div>
                 <div class="card-body bg-white rounded-bottom h-100 position-relative border-neutral04 border border-top-0 border-2">
-                  <button class="btn btn-primary addShoppingCart align-items-center justify-content-center hoverUp">
-                    <span class="material-symbols-outlined me-1">add_shopping_cart</span>
+                  <button class="btn btn-primary addShoppingCart align-items-center justify-content-center hoverUp" data-bs-toggle="modal" data-bs-target="#addCartSuccess">
+                    <span class="material-symbols-outlined me-1" >add_shopping_cart</span>
                     加入購物車
                   </button>
                   <div class="d-flex flex-column justify-content-between mb-4 px-4 h-100">
                     <div>
-                     <h4 class="fw-bold mb-2">經典原味軟餅乾</h4>
+                      <a href="cocoaIntro.html" class="stretched-link text-dark"><h4 class="fw-bold mb-2">經典原味餅乾</h4></a>
                      <p class="fs-6">軟餅乾,最經典的那種。</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
@@ -139,18 +146,18 @@
               </div>
             </div>
             <div class="col-lg-3 col-6">
-              <div class="card bg-transparent border-0 h-100 productCard">
+              <div class="card bg-transparent border-0 h-100 productCard hoverUp">
                 <div class="card-img-container  rounded-top-circle overflow-hidden border-neutral04 border border-bottom-0 border-2">
                   <img src="/2024-Layout-Topic/assets/可可-6c57b201.jpg" class="card-img-top" alt="香濃可可">
                 </div>
                 <div class="card-body bg-white rounded-bottom position-relative border-neutral04 border border-top-0 border-2">
-                  <button class="btn btn-primary addShoppingCart align-items-center justify-content-center hoverUp">
+                  <button class="btn btn-primary addShoppingCart align-items-center justify-content-center hoverUp" data-bs-toggle="modal" data-bs-target="#addCartSuccess">
                     <span class="material-symbols-outlined me-1">add_shopping_cart</span>
                     加入購物車
                   </button>
                   <div class="d-flex flex-column justify-content-between mb-4 px-4 h-100">
                     <div>
-                     <h4 class="fw-bold mb-2">香濃可可軟餅乾</h4>
+                      <a href="cocoaIntro.html" class="stretched-link text-dark"><h4 class="fw-bold mb-2">香濃可可軟餅乾</h4></a>
                      <p class="fs-6 cocoText">使用法國進口法芙娜<span class="pcOpen">可可粉製作而成，有濃濃的可可香氣。</span><span class="mbOpen">...</span></p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
@@ -165,18 +172,18 @@
             </div>
             </div>
             <div class="col-lg-3 col-6">
-              <div class="card bg-transparent border-0 h-100 productCard" >
+              <div class="card bg-transparent border-0 h-100 productCard hoverUp" >
                 <div class="card-img-container  rounded-top-circle overflow-hidden border-neutral04 border border-bottom-0 border-2">
                   <img src="/2024-Layout-Topic/assets/焙茶-b4f1488b.jpg" class="card-img-top" alt="靜岡焙茶">
                 </div>
                 <div class="card-body bg-white rounded-bottom position-relative border-neutral04 border border-top-0 border-2">
-                  <button class="btn btn-primary addShoppingCart align-items-center justify-content-center hoverUp">
+                  <button class="btn btn-primary addShoppingCart align-items-center justify-content-center hoverUp" data-bs-toggle="modal" data-bs-target="#addCartSuccess">
                     <span class="material-symbols-outlined me-1">add_shopping_cart</span>
                     加入購物車
                   </button>
                   <div class="d-flex flex-column justify-content-between mb-4 px-4 h-100">
                     <div>
-                     <h4 class="fw-bold mb-2">靜岡焙茶軟餅乾</h4>
+                      <a href="cocoaIntro.html" class="stretched-link text-dark"><h4 class="fw-bold mb-2">靜岡焙茶軟餅乾</h4></a>
                      <p class="fs-6">焙茶香氣濃郁,大人的口味。</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
@@ -191,18 +198,18 @@
             </div>
             </div>
             <div class="col-lg-3 col-6 ">
-              <div class="card bg-transparent border-0 h-100 productCard" >
+              <div class="card bg-transparent border-0 h-100 productCard hoverUp" >
                 <div class="card-img-container  rounded-top-circle overflow-hidden border-neutral04 border border-bottom-0 border-2">
                   <img src="/2024-Layout-Topic/assets/mini綜合-f3d5c37a.jpg" class="card-img-top" alt="綜合mini">
                 </div>
                 <div class="card-body bg-white rounded-bottom position-relative border-neutral04 border border-top-0 border-2">
-                  <button class="btn btn-primary addShoppingCart align-items-center justify-content-center hoverUp">
+                  <button class="btn btn-primary addShoppingCart align-items-center justify-content-center hoverUp" data-bs-toggle="modal" data-bs-target="#addCartSuccess">
                     <span class="material-symbols-outlined me-1">add_shopping_cart</span>
                     加入購物車
                   </button>
                   <div class="d-flex flex-column justify-content-between mb-4 px-4 h-100">
                     <div>
-                     <h4 class="fw-bold mb-2">綜合Mini cookies10入</h4>
+                      <a href="cocoaIntro.html" class="stretched-link text-dark"><h4 class="fw-bold mb-2">綜合Mini 10入</h4></a>
                      <p class="fs-6">親愛的,我把軟餅乾變小了!</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
@@ -217,12 +224,12 @@
             </div>
             </div>
 
-            <!-- modal -->
-            <div class="modal fade" id="addFavorite" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!--收藏 modal -->
+            <div class="modal fade" id="addFavorite" tabindex="-1" aria-labelledby="addFavorite" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">加入收藏</h1>
+                    <h1 class="modal-title fs-5" id="addFavorite">加入收藏</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
@@ -234,11 +241,11 @@
                 </div>
               </div>
             </div>
-            <div class="modal fade" id="deleteFavorite" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="deleteFavorite" tabindex="-1" aria-labelledby="deleteFavorite" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">移除收藏</h1>
+                    <h1 class="modal-title fs-5" id="deleteFavorite">移除收藏</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
@@ -247,6 +254,24 @@
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove">取消</button>
                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal">我要移除</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- cart modal -->
+            <div class="modal fade" id="addCartSuccess" tabindex="-1" aria-labelledby="addCartSuccess" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="addCartSuccess">加入購物車</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    加入成功
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">返回</button>
+                    <a class="btn btn-primary" href="shoppingCart.html">前往購物車</a>
                   </div>
                 </div>
               </div>
