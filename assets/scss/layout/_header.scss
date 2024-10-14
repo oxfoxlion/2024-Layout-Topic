@@ -1,6 +1,6 @@
 .header{
   z-index: 10;
-  background-image:url(/assets/images/Header/BG3.png);
+  background-image:url(https://firebasestorage.googleapis.com/v0/b/instantcheeses.appspot.com/o/%E5%88%87%E7%89%88%E5%B0%88%E9%A1%8C-%E5%85%B6%E6%99%82%E6%89%8B%E5%B7%A5%E7%94%9C%E9%BB%9E%2FBG3.png?alt=media&token=821c6c8e-549a-4c67-8997-1def587a0fe0);
   background-size: cover;
   background-repeat: repeat-x;
   background-position: center bottom;
@@ -10,9 +10,9 @@
 }
 
 .brand-img{
-  width: 80px;height: auto;
+  width: 60px;height: auto;
   @include large{
-    width: 120px;
+    width: 80px;
   }
 }
 

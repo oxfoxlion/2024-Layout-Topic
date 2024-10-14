@@ -2,9 +2,9 @@
   z-index: 0;
   position: relative;
   width: 100%;
-  padding-top: 500px;
+  padding-top: 400px;
   padding-bottom: 40px;
-  background-image: url(/assets/images/banner.jpg);
+  background-image: url(/assets/images/banner2.jpg);
   background-size:cover;
   background-position: 40% 60%;
 
@@ -105,13 +105,28 @@
     bottom: 0;
     left: 0;
   }
+}
 
+.cocoText{
+  .pcOpen{
+    display: none;
+  }
+
+  @include medium{
+    .mbOpen{
+      display: none;
+    }
+
+    .pcOpen{
+      display: inline;
+    }
+  }
 
 }
 
-.favorate{
-  width: 44px;
-  height: 44px;
+.favorite{
+  z-index: 8;
+  padding: 0;
   background-color: #1E1E1E66;
   display: none !important;
   @include large{
@@ -120,28 +135,31 @@
 
   .true{
     display: none;
+    padding: 12.4px 14px;
+  }
+  .false{
+    display: block;
+    padding: 12.4px 14px;
   }
 
   &:hover{
     background-color:#1E1E1EB2;
   }
+}
 
-  &:focus{
-    background-color: $brand02;
-    .false{
-      display: none;
-    }
-    .true{
-      display: inline;
-    }
+.favorite.active{
+  background-color: $brand02;
+  .false{
+    display: none;
+  }
+  .true{
+    display: block;
+    // padding: 100%;
   }
 
-  &:focus:hover{
+  &:hover{
     background-color: $brand06;
   }
-
-  
-
 }
 
 .cardBox{
@@ -174,7 +192,7 @@
 }
 
 .graduationSpecial-img{
-  background-image: url(/assets/images/graduationSpecial.jfif);
+  background-image: url(/assets/images/graduationSpecial.jpg);
   background-position: center;
   
 }

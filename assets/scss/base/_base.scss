@@ -1,8 +1,9 @@
+
+
 body{
     font-family: "Noto Sans TC", sans-serif;
-    position: relative;
     line-height: 1.2;
-    
+
 }
 
 a{
@@ -40,4 +41,8 @@ img{
         @media (min-width:992px) {
             @content;
         }
+    }
+
+    .bg-brand04{
+        background-color: #FFFAEB;
     }

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>其時手工甜點-購物車</title>
+    <link rel="icon" href="/assets/images/logo.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <%- include("./layout/header") -%>
+<div class="pb-10" style="padding-top: 162px;">
+  <div class="container">
+    <!-- breadcrumb -->
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-9">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="shoppingCart.html" aria-current="page">購物車</a></li>
+        <li class="breadcrumb-item"><a href="applicationInformation.html">填寫訂購資訊</a></li>
+        <li class="breadcrumb-item" active><a href="confirmInformation.html">確認訂購資訊</a></li>
+        <li class="breadcrumb-item"><a href="#">訂購成功</a></li>
+        </ol>
+      </nav>
+      <!--content -->
+      <div class="row justify-content-between">
+        <div class="col-md-4">
+          <div class="border border-top-0 border-start-0 border-bottom-0 border-2">
+            <h4 class="mb-5">訂購人資訊</h4>
+            <form action="#">
+              <div class="mb-3">
+                <label for="name"  class="form-label">姓名</label>
+                <input type="text" name="name" id="name" placeholder="請輸入您的本名" class="form-control w-75"  value="陳米茶" disabled>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">電子郵件</label>
+                <input type="emil" name="email" id="email" placeholder="請輸入您的電子郵件" class="form-control w-75" value="micha@gmail.com" disabled>
+              </div>
+              
+              <div class="mb-3">
+                <label for="phoneNumber" class="form-label">連絡電話</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="請輸入您的連絡電話" class="form-control w-75"  value="0912345678" disabled>
+              </div>
+              
+              
+            </form>
+          </div>
+          
+        </div>
+        <div class="col-md-8">
+          <h4 class="mb-5">收件人資訊</h4>
+          <form action="#">
+            <div class="mb-3">
+              <label for="name"  class="form-label" >姓名</label>
+              <input type="text" name="name" id="name" placeholder="請輸入收件人本名" class="form-control w-75" value="陳米胖" disabled>
+            </div>
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">連絡電話</label>
+              <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="請輸入收件人連絡電話" class="form-control w-75" value="0987654321" disabled>
+            </div>
+            <div class="mb-3">
+              <label for="address" class="form-label">配送地址</label>
+              <input type="text" name="address" id="address" placeholder="請輸入配送地址" class="form-control w-75" value="高雄市燕巢區兔子里貓貓洞5號" disabled>
+            </div>
+            
+            
+          </form>
+        </div>
+      </div>
+
+      <div class="border border-2 py-5 px-5 my-10">
+        <h4 class="mb-5">信用卡資料</h4>
+        <form action="#">
+          <div class="mb-3">
+            <label for="credit-card"  class="form-label">信用卡卡號</label>
+            <input type="text" name="credit-card" id="credit-card" pattern="\d{13,16}" maxlength="16" placeholder="請輸入信用卡號" class="form-control w-75" value="1234567890123456" disabled>
+          </div>
+          <div class="mb-3">
+            <label for="cvv" class="form-label">安全碼</label>
+            <input type="password" name="cvv" id="cvv" pattern="\d{3,4}" maxlength="4"  placeholder="請輸入信用卡後安全碼共3碼" class="form-control w-75" value="123" disabled>
+          </div>
+          
+          <div class="mb-3">
+            <label for="expiry-date" class="form-label">有效日期</label>
+            <input type="month" name="expiry-date" id="expiry-date" placeholder="請輸入信用卡有效日期" class="form-control w-75" value="2027-08" disabled>
+          </div>
+          
+          
+        </form>
+      </div>
+
+      <div class="d-flex justify-content-end gap-3">
+        <a class="btn btn-secondary" href="applicationInformation.html">返回</a>
+        <a class="btn btn-primary" href="successful.html">下一步</a>
+      </div>
+      
+
+
+  </div>
+</div>
+
+    
+    
+
+    <%- include("./layout/footer") -%>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+  </body>
+</html>
