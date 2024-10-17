@@ -47,6 +47,13 @@ document.querySelectorAll('.addShoppingCart').forEach(button => {
   });
 });
 
+document.querySelectorAll('.addShoppingCart2').forEach(button => {
+  button.addEventListener('click', function() {
+    cartCount++;
+    updateCartBadge();
+  });
+});
+
 // 更新徽章數字
 function updateCartBadge() {
   const cartBadge = document.getElementById('cartBadge');
