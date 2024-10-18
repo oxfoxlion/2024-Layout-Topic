@@ -135,168 +135,26 @@
   </div>
 </div>
 <div class="bg-brand04">
-  <div class="container py-lg-8 py-5">
-    <div class="mb-4 mb-lg-6">
+  <div class="container py-lg-11 py-8">
+    <div class="mb-6 mb-lg-8">
       <h2 class="text-center fw-black">讓你的聚會更完美</h2>
     </div>
     <div class="row cardBox">
           <div class="col-lg-3 col-6">
-            <div class="card bg-transparent h-100 productCard border-0 hoverUp">
-              <div class="card-img-container rounded-top-circle overflow-hidden border-neutral04 border border-bottom-0 border-2">
-                <img src="/assets/images/原味.jpg" class="card-img-top" alt="經典原味">
-              </div>
-              <div class="card-body bg-white rounded-bottom h-100 position-relative border-neutral04 border border-top-0 border-2">
-                <button class="btn btn-primary addShoppingCart align-items-center justify-content-center hoverUp" data-bs-toggle="modal" data-bs-target="#addCartSuccess">
-                  <span class="material-symbols-outlined me-1" >add_shopping_cart</span>
-                  加入購物車
-                </button>
-                <div class="d-flex flex-column justify-content-between mb-4 px-4 h-100">
-                  <div>
-                    <a href="cocoaIntro.html" class="stretched-link text-dark"><h4 class="fw-bold mb-2">經典原味軟餅乾</h4></a>
-                   <p class="fs-6">軟餅乾,最經典的那種。</p>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between">
-                   <h4 class="text-primary fw-bold">NT$ 45</h4>
-                   <button class="favorite rounded-circle border-0 text-white d-flex justify-content-center align-items-center" data-bs-toggle="button" aria-pressed="true">
-                    <i class="bi bi-heart false" data-bs-toggle="modal" data-bs-target="#addFavorite"></i>
-                    <i class="bi bi-heart-fill true" data-bs-toggle="modal" data-bs-target="#deleteFavorite"></i>
-                  </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <%- include('./layout/productTea')-%>
           </div>
           <div class="col-lg-3 col-6">
-            <div class="card bg-transparent border-0 h-100 productCard hoverUp">
-              <div class="card-img-container  rounded-top-circle overflow-hidden border-neutral04 border border-bottom-0 border-2">
-                <img src="/assets/images/可可.jpg" class="card-img-top" alt="香濃可可">
-              </div>
-              <div class="card-body bg-white rounded-bottom position-relative border-neutral04 border border-top-0 border-2">
-                <button class="btn btn-primary addShoppingCart align-items-center justify-content-center hoverUp" data-bs-toggle="modal" data-bs-target="#addCartSuccess">
-                  <span class="material-symbols-outlined me-1">add_shopping_cart</span>
-                  加入購物車
-                </button>
-                <div class="d-flex flex-column justify-content-between mb-4 px-4 h-100">
-                  <div>
-                    <a href="cocoaIntro.html" class="stretched-link text-dark"><h4 class="fw-bold mb-2">香濃可可軟餅乾</h4></a>
-                   <p class="fs-6 cocoText">使用法國進口法芙娜<span class="pcOpen">可可粉製作而成，有濃濃的可可香氣。</span><span class="mbOpen">...</span></p>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between">
-                   <h4 class="text-primary fw-bold">NT$ 45</h4>
-                   <button class="favorite rounded-circle border-0 text-white d-flex justify-content-center align-items-center active" data-bs-toggle="button" aria-pressed="true">
-                    <i class="bi bi-heart false" data-bs-toggle="modal" data-bs-target="#addFavorite"></i>
-                    <i class="bi bi-heart-fill true" data-bs-toggle="modal" data-bs-target="#deleteFavorite"></i>
-                  </button>
-                  </div>
-              </div>
-            </div>
-          </div>
+            <%- include('./layout/productCocoaM')-%>>
           </div>
           <div class="col-lg-3 col-6">
-            <div class="card bg-transparent border-0 h-100 productCard hoverUp" >
-              <div class="card-img-container  rounded-top-circle overflow-hidden border-neutral04 border border-bottom-0 border-2">
-                <img src="/assets/images/焙茶.jpg" class="card-img-top" alt="靜岡焙茶">
-              </div>
-              <div class="card-body bg-white rounded-bottom position-relative border-neutral04 border border-top-0 border-2">
-                <button class="btn btn-primary addShoppingCart align-items-center justify-content-center hoverUp" data-bs-toggle="modal" data-bs-target="#addCartSuccess">
-                  <span class="material-symbols-outlined me-1">add_shopping_cart</span>
-                  加入購物車
-                </button>
-                <div class="d-flex flex-column justify-content-between mb-4 px-4 h-100">
-                  <div>
-                    <a href="cocoaIntro.html" class="stretched-link text-dark"><h4 class="fw-bold mb-2">靜岡焙茶軟餅乾</h4></a>
-                   <p class="fs-6">焙茶香氣濃郁,大人的口味。</p>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between">
-                   <h4 class="text-primary fw-bold">NT$ 45</h4>
-                   <button class="favorite rounded-circle border-0 text-white d-flex justify-content-center align-items-center active" data-bs-toggle="button" aria-pressed="true">
-                    <i class="bi bi-heart false" data-bs-toggle="modal" data-bs-target="#addFavorite"></i>
-                    <i class="bi bi-heart-fill true" data-bs-toggle="modal" data-bs-target="#deleteFavorite"></i>
-                  </button>
-                  </div>
-              </div>
-            </div>
-          </div>
+            <%- include('./layout/productOriginalM')-%>
           </div>
           <div class="col-lg-3 col-6 ">
-            <div class="card bg-transparent border-0 h-100 productCard hoverUp" >
-              <div class="card-img-container  rounded-top-circle overflow-hidden border-neutral04 border border-bottom-0 border-2">
-                <img src="/assets/images/mini綜合.jpg" class="card-img-top" alt="綜合mini">
-              </div>
-              <div class="card-body bg-white rounded-bottom position-relative border-neutral04 border border-top-0 border-2">
-                <button class="btn btn-primary addShoppingCart align-items-center justify-content-center hoverUp" data-bs-toggle="modal" data-bs-target="#addCartSuccess">
-                  <span class="material-symbols-outlined me-1">add_shopping_cart</span>
-                  加入購物車
-                </button>
-                <div class="d-flex flex-column justify-content-between mb-4 px-4 h-100">
-                  <div>
-                    <a href="cocoaIntro.html" class="stretched-link text-dark"><h4 class="fw-bold mb-2">綜合Mini 10入</h4></a>
-                   <p class="fs-6">親愛的,我把軟餅乾變小了!</p>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between">
-                   <h4 class="text-primary fw-bold">NT$ 230</h4>
-                   <button class="favorite rounded-circle border-0 text-white d-flex justify-content-center align-items-center" data-bs-toggle="button" aria-pressed="true">
-                    <i class="bi bi-heart false" data-bs-toggle="modal" data-bs-target="#addFavorite"></i>
-                    <i class="bi bi-heart-fill true" data-bs-toggle="modal" data-bs-target="#deleteFavorite"></i>
-                  </button>
-                  </div>
-              </div>
-            </div>
-          </div>
+            <%- include('./layout/productFlower')-%>
           </div>
   
-          <!--收藏 modal -->
-          <div class="modal fade" id="addFavorite" tabindex="-1" aria-labelledby="addFavorite" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="addFavorite">加入收藏</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  收藏成功
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">繼續瀏覽</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal fade" id="deleteFavorite" tabindex="-1" aria-labelledby="deleteFavorite" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="deleteFavorite">移除收藏</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  此商品已在您的收藏清單，是否移除？
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove">取消</button>
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">我要移除</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- cart modal -->
-          <div class="modal fade" id="addCartSuccess" tabindex="-1" aria-labelledby="addCartSuccess" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="addCartSuccess">加入購物車</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  加入成功
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">返回</button>
-                  <a class="btn btn-primary" href="shoppingCart.html">前往購物車</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- modal -->
+          <%- include('./layout/modal')-%>
     </div>
     <div class="d-flex justify-content-center mt-9">
       <a href="product.html" class="btn btn-primary d-flex justify-content-center align-items-center hoverUp">查看更多<span class="material-symbols-outlined">arrow_forward</span></a>

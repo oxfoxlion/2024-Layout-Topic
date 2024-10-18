@@ -10,8 +10,10 @@
 
 @import './base/cssReset';
 @import './base/base';
+@import './base/fontSize';
 @import './layout/header';
 @import './layout/footer';
+@import './layout/productCocoa';
 @import './pages/index';
 @import './pages/product';
 @import './pages/shoppingCart';

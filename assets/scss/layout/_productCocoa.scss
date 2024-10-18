@@ -1,0 +1,16 @@
+.cocoText{
+    .pcOpen{
+      display: none;
+    }
+  
+    @include medium{
+      .mbOpen{
+        display: none;
+      }
+  
+      .pcOpen{
+        display: inline;
+      }
+    }
+  
+  }

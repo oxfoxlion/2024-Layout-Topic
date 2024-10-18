@@ -1,5 +1,4 @@
 .annotation{
-  font-size: 14px;
   color:$neutral;
 }
 
@@ -7,4 +6,24 @@
   a{
     color:$white;
   }
+}
+
+.footer{
+  position: relative;
+  &::after{
+    z-index: 5;
+    content: "";
+    position: absolute;
+    bottom:99%;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    background: url(/assets/images/Brush_footer_mobile.png);
+
+    @include smaill{
+      height: 65px;
+      background: url(/assets/images/Brush_footer.png);
+    }
+  }
+  
 }

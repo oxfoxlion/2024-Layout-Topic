@@ -2,7 +2,6 @@
 
 body{
     font-family: "Noto Sans TC", sans-serif;
-    line-height: 1.2;
 
 }
 
@@ -45,4 +44,9 @@ img{
 
     .bg-brand04{
         background-color: #FFFAEB;
+    }
+
+    .hidden {
+        opacity: 0;
+        visibility: hidden;
     }
