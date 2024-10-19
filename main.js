@@ -19,27 +19,6 @@ AOS.init();
 //shpping Cart
 let cartCount = 0;
 
-// 當按下「Add Item」按鈕時，增加購物車數量
-// document.getElementById('addCartOriginal').addEventListener('click', function() {
-//   cartCount++;
-//   updateCartBadge();
-// });
-
-// document.getElementById('addCartCocoa').addEventListener('click', function() {
-//   cartCount++;
-//   updateCartBadge();
-// });
-
-// document.getElementById('addCartTea').addEventListener('click', function() {
-//   cartCount++;
-//   updateCartBadge();
-// });
-
-// document.getElementById('addCartMiniMix').addEventListener('click', function() {
-//   cartCount++;
-//   updateCartBadge();
-// });
-
 document.querySelectorAll('.addShoppingCart').forEach(button => {
   button.addEventListener('click', function() {
     cartCount++;
@@ -60,8 +39,9 @@ function updateCartBadge() {
   cartBadge.textContent = cartCount > 99 ? '99+' : cartCount;
 }
 
+
 // header隱藏
-// 選取 header 和第二個區塊
+// 選取 header 和區塊
 const header = document.getElementById('header');
 const headerFade = document.getElementById('headerFade');
 
@@ -76,6 +56,31 @@ window.addEventListener('scroll', () => {
         header.classList.remove('hidden');
     }
 });
+
+// header隱藏
+// 選取 header 和區塊
+const navbarBrand = document.getElementById('navbar-brand');
+const navbarBrandFade = document.getElementById('navbar-brand-fade');
+
+// 監聽滾動事件
+window.addEventListener('scroll', () => {
+    const navbarBrandFadeTop = navbarBrandFade.getBoundingClientRect().top;
+
+    // 當滾動到 headerFade 的位置時，隱藏 header
+    if (navbarBrandFadeTop <= 0) {
+      navbarBrand.classList.add('mobile-hidden');
+    } else {
+      navbarBrand.classList.remove('mobile-hidden');
+    }
+});
+
+
+
+
+
+
+
+
 
 //收藏按鈕-可可
 document.getElementById('toggleRemove').addEventListener('click', function () {

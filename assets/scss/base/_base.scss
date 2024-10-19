@@ -50,3 +50,10 @@ img{
         opacity: 0;
         visibility: hidden;
     }
+
+    .mobile-hidden{
+        display: none;
+        @include large{
+            display: block;
+        }
+    }
