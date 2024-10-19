@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script type="module" crossorigin src="/2024-Layout-Topic/assets/main-406de70b.js"></script>
-    <link rel="stylesheet" href="/2024-Layout-Topic/assets/main-26532e2a.css">
+    <script type="module" crossorigin src="/2024-Layout-Topic/assets/main-f0730da3.js"></script>
+    <link rel="stylesheet" href="/2024-Layout-Topic/assets/main-0bf69ed3.css">
   </head>
   <body>
     <div class="header" id="header">
@@ -55,7 +55,7 @@
 </div>
     
 </div>
-<div class="pb-10" style="padding-top: 162px;">
+<div class="bg-brand04 py-13" id="navbar-brand-fade">
   <div class="container">
     <!-- breadcrumb -->
     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-9">
@@ -65,125 +65,244 @@
     <li class="breadcrumb-item"><a href="confirmInformation.html">確認訂購資訊</a></li>
     <li class="breadcrumb-item"><a href="successful.html">訂購成功</a></li>
     </ol>
-  </nav>      <!-- title -->
-      <div class="mb-4 mb-lg-6">
-        <h2 class="text-center fw-black">購物車</h2>
-      </div>
-
-      <table class="w-100 table  table-white table-bordered " >
-        <thead>
-          <tr>
-            <th scope="col">
-              <div class="form-check">
-               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-               <label class="form-check-label" for="flexCheckDefault">
-               </label>
-              </div>
-           </th>
-            <th scope="col">產品</th>
-            <th scope="col">單價</th>
-            <th scope="col">數量</th>
-            <th scope="col">總計</th>
-            <th scope="col">功能</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td ><div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-              </label>
-             </div></td>
-            <td>
-              <div class="d-flex justify-content-start align-items-center gap-5">
-                <div class="overflow-hidden" style="width: 100px;height: 100px;">
-                  <img src="/2024-Layout-Topic/assets/原味棉花糖-e8b62420.jpg" alt="原味棉花糖" style="object-fit: cover;">
-                </div>
-                <p>原味棉花糖軟餅乾</p>
-              </div>
-              </td>
-            <td>NT$60</td>
-            <td>
-              <select class="form-select" aria-label="Default select example">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5" selected >5</option>
-            </select>
-          </td>
-            <td>NT$ 300</td>
-            <td><button>刪除</button></td>
-          </tr>
-          <tr>
-            <td ><div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-              </label>
-             </div></td>
-            <td>
-              <div class="d-flex justify-content-start align-items-center gap-5">
-                <div class="overflow-hidden" style="width: 100px;height: 100px;">
-                  <img src="/2024-Layout-Topic/assets/shoppingCart-cocoa-83d1aa2b.jpg" alt="可可棉花糖" style="object-fit: cover;">
-                </div>
-                <p>可可棉花糖軟餅乾</p>
-              </div>
-              </td>
-            <td>NT$60</td>
-            <td>
-              <select class="form-select" aria-label="Default select example">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5" selected >5</option>
-            </select>
-          </td>
-            <td>NT$ 300</td>
-            <td><button>刪除</button></td>
-          </tr>
-        </tbody>
-        
-      </table>
-
-      <div class="paidInformation">
-       <div class="row justify-content-between mb-10">
-        <div class="col-6">
-          <h4>付款方式</h4>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="card" id="paidByCard">
-            <label class="form-check-label" for="paidByCard">信用卡</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="cash" id="paidByCash">
-            <label class="form-check-label" for="paidByCash">貨到付款</label>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="d-flex justify-content-between align-items-center w-100">
-            <h5>總金額</h5>
-            <h6>$600</h6>
-          </div>
-          <div class="d-flex justify-content-between align-items-center w-100">
-            <h5>運費</h5>
-            <h6>$60</h6>
-          </div>
-          <div class="d-flex justify-content-between align-items-center w-100">
-            <h5>應付金額</h5>
-            <h6>$660</h6>
-          </div>
-        </div>
-       </div>
-       <div class="d-flex justify-content-end gap-5">
-        <a href="product.html" class="btn btn-primary p-4 text-center">再去逛逛</a>
-        <a href="applicationInformation.html" class="btn btn-primary p-4 text-center">送出訂單</a>
-       </div>
-          
-      </div>
+  </nav>
   </div>
+  <div class="container">
+    <!-- title -->
+    <div class="mb-4 mb-lg-6">
+      <h2 class="text-center font-size-h2 mb-10">購物車</h2>
+    </div>
+  
+    <div class="row">
+      <div class="col-lg-9 mb-8 mb-lg-0">
+        <div class="bg-white rounded-3 shadow p-5">
+          <div class="d-flex justify-content-start align-items-center gap-5 py-3 border-bottom">
+            <input class="form-check-input" type="checkbox" id="selectAll" onclick="toggleCheckboxes(this)">
+            <label class="form-check-label font-size-h5 text-primary" for="flexCheckDefault">全選</label>
+          </div>
+          <div class="d-flex flex-lg-row justify-content-between align-items-center py-3 border-bottom">
+
+            <div class="row w-100">
+              <div class="col-lg-6 d-flex gap-5 mb-5 mb-lg-0">
+                <input class="form-check-input itemCheckbox" type="checkbox">
+                <div class="overflow-hidden rounded-3" style="width: 100px;height: 100px;">
+                 <img src="/2024-Layout-Topic/assets/原味棉花糖-e8b62420.jpg" alt="原味棉花糖" style="object-fit: cover;">
+                </div>
+                <div class="d-flex flex-column justify-content-center">
+                  <p class="font-size-h5 mb-3">原味棉花糖軟餅乾</p>
+                    <p class="font-size-h7 text-primary">NT$60</p>
+                 </div>
+              </div>
+              <div class="col-lg-6 d-flex gap-5">
+                <div class="row w-100">
+                  <div class="col-lg-6 d-flex justify-content-lg-center justify-content-start align-items-center ps-8 ps-lg-0">
+                    <div class="d-flex">
+                      <button class="btn rounded-0 border" id="increment">+</button>
+                      <input class="text-center border" type="number" id="counter" value="5" style="width: 50px;" >
+                      <button class="btn rounded-0 border" id="decrement">-</button>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 d-flex justify-content-between align-items-center ps-8 ps-lg-0">
+                    <p class="font-size-h7" id="result">NT$ 300</p>
+                    <button class="btn"><span class="material-symbols-outlined">
+                      close
+                      </span></button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+             
+            
+          </div>
+          <div class="d-flex flex-lg-row justify-content-between align-items-center py-3 border-bottom">
+
+            <div class="row w-100">
+              <div class="col-lg-6 d-flex gap-5 mb-5 mb-lg-0">
+                <input class="form-check-input itemCheckbox" type="checkbox">
+                <div class="overflow-hidden rounded-3" style="width: 100px;height: 100px;">
+                 <img src="/2024-Layout-Topic/assets/shoppingCart-cocoa-83d1aa2b.jpg" alt="可可棉花糖" style="object-fit: cover;">
+                </div>
+                <div class="d-flex flex-column justify-content-center">
+                  <p class="font-size-h5 mb-3">可可棉花糖軟餅乾</p>
+                    <p class="font-size-h7 text-primary">NT$60</p>
+                 </div>
+              </div>
+              <div class="col-lg-6 d-flex gap-5">
+                <div class="row w-100">
+                  <div class="col-lg-6 d-flex justify-content-lg-center justify-content-start align-items-center ps-8 ps-lg-0">
+                    <div class="d-flex">
+                      <button class="btn rounded-0 border" id="increment2">+</button>
+                      <input class="text-center border" type="number" id="counter2" value="5" style="width: 50px;" >
+                      <button class="btn rounded-0 border" id="decrement2">-</button>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 d-flex justify-content-between align-items-center ps-8 ps-lg-0">
+                    <p class="font-size-h7" id="result2">NT$ 300</p>
+                    <button class="btn"><span class="material-symbols-outlined">
+                      close
+                      </span></button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+             
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-3">
+        <div class="bg-white rounded-3 shadow p-5">
+          <div class="d-flex justify-content-start align-items-center gap-5 py-3 border-bottom">
+            <h5 class="font-size-h5 text-primary">結帳資訊</h5>
+          </div>
+          <div class="d-flex flex-column justify-content-start align-items-center gap-5 py-3 border-bottom">
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <h6 class="font-size-h7">小計</h6>
+              <h6 class="font-size-h7" id="subtotal">NT$ 600</h6>
+            </div>
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <h6 class="font-size-h7">運費</h6>
+              <h6 class="font-size-h7" id="shipping">NT$ 60</h6>
+            </div>
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <h6 class="font-size-h7">應付金額</h6>
+              <h6 class="font-size-h7" id="total">NT$ 660</h6>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-end gap-5 mt-10">
+      <a href="product.html" class="btn btn-primary p-4 text-center">再去逛逛</a>
+      <a href="applicationInformation.html" class="btn btn-primary p-4 text-center">送出訂單</a>
+     </div>
+  
+    <!-- <table class="w-100  table-white " >
+      <thead>
+        <tr>
+          <th scope="col">
+            <div class="form-check">
+             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+             <label class="form-check-label" for="flexCheckDefault">
+             </label>
+            </div>
+         </th>
+          <th scope="col">產品</th>
+          <th scope="col">數量</th>
+          <th scope="col">總計</th>
+          <th scope="col">功能</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td ><div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            </label>
+           </div></td>
+          <td>
+            <div class="d-flex justify-content-start align-items-center gap-5">
+              <div class="overflow-hidden" style="width: 100px;height: 100px;">
+                <img src="/assets/images/原味棉花糖.jpg" alt="原味棉花糖" style="object-fit: cover;">
+              </div>
+              <div>
+                <p class="font-size-h5 mb-3">原味棉花糖軟餅乾</p>
+                <p class="font-size-h7 text-primary">NT$60</p>
+              </div>
+              
+            </div>
+            </td>
+          <td>
+            <select class="form-select" aria-label="Default select example">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5" selected >5</option>
+          </select>
+        </td>
+          <td>NT$ 300</td>
+          <td><button class="btn"><span class="material-symbols-outlined">
+            close
+            </span></button></td>
+        </tr>
+        <tr>
+          <td ><div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            </label>
+           </div></td>
+          <td>
+            <div class="d-flex justify-content-start align-items-center gap-5">
+              <div class="overflow-hidden" style="width: 100px;height: 100px;">
+                <img src="/assets/images/shoppingCart-cocoa.jpg" alt="可可棉花糖" style="object-fit: cover;">
+              </div>
+              <p>可可棉花糖軟餅乾</p>
+            </div>
+            </td>
+          <td>NT$60</td>
+          <td>
+            <select class="form-select" aria-label="Default select example">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5" selected >5</option>
+          </select>
+        </td>
+          <td>NT$ 300</td>
+          <td><button class="btn"><span class="material-symbols-outlined">
+            close
+            </span></button></td>
+        </tr>
+      </tbody>
+      
+    </table>
+  
+    <div class="paidInformation">
+     <div class="row justify-content-between mb-10">
+      <div class="col-6">
+        <h4>付款方式</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="card" id="paidByCard">
+          <label class="form-check-label" for="paidByCard">信用卡</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="cash" id="paidByCash">
+          <label class="form-check-label" for="paidByCash">貨到付款</label>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <h5>總金額</h5>
+          <h6>$600</h6>
+        </div>
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <h5>運費</h5>
+          <h6>$60</h6>
+        </div>
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <h5>應付金額</h5>
+          <h6>$660</h6>
+        </div>
+      </div>
+     </div>
+     
+        
+    </div> -->
+  </div>
+  
 </div>
-<div class="bg-brand04">
-  <div class="container py-lg-11 py-8">
+
+<!-- <div class="bg-brand04"> -->
+  <div class="container pt-lg-11 pt-7 pb-md-12 pb-10">
     <div class="mb-6 mb-lg-8">
       <h2 class="text-center fw-black">讓你的聚會更完美</h2>
     </div>
@@ -236,7 +355,6 @@
     </div>
   </div>
 </div>
->
           </div>
           <div class="col-lg-3 col-6">
             <div class="card bg-transparent border-0 h-100 productCard hoverUp">
@@ -344,7 +462,7 @@
       <a href="product.html" class="btn btn-primary d-flex justify-content-center align-items-center hoverUp">查看更多<span class="material-symbols-outlined">arrow_forward</span></a>
     </div>
   </div>
-</div>
+<!-- </div> -->
 
     
     
@@ -387,6 +505,78 @@
             </span>
     </a>
 </div>
+    <!-- 購物車全選 -->
+    <script>
+      function toggleCheckboxes(source) {
+          const checkboxes = document.querySelectorAll('.itemCheckbox');
+          checkboxes.forEach(checkbox => {
+              checkbox.checked = source.checked;
+          });
+      }
+   // 原味棉花糖數量與總價設定
+const counterInput = document.getElementById('counter');
+const incrementBtn = document.getElementById('increment');
+const decrementBtn = document.getElementById('decrement');
+const resultDiv = document.getElementById('result');
+
+// 可可棉花糖數量與總價設定
+const counterInput2 = document.getElementById('counter2');
+const incrementBtn2 = document.getElementById('increment2');
+const decrementBtn2 = document.getElementById('decrement2');
+const resultDiv2 = document.getElementById('result2');
+
+// 小計與應付金額
+const subtotalDiv = document.getElementById('subtotal'); // 小計
+const totalDiv = document.getElementById('total'); // 應付金額
+
+// 運費
+const shippingFee = 60; // 假設運費固定 NT$60
+
+// 更新每個商品的結果顯示
+function updateResult() {
+  const price1 = parseInt(counterInput.value) * 60;
+  resultDiv.textContent = "NT$ " + price1;
+
+  const price2 = parseInt(counterInput2.value) * 60;
+  resultDiv2.textContent = "NT$ " + price2;
+
+  // 更新小計與應付金額
+  updateSubtotalAndTotal(price1, price2);
+}
+
+// 更新小計與應付金額
+function updateSubtotalAndTotal(price1, price2) {
+  const subtotal = price1 + price2;
+  const total = subtotal + shippingFee;
+
+  subtotalDiv.textContent = "NT$ " + subtotal;
+  totalDiv.textContent = "NT$ " + total;
+}
+
+// 增加或減少數量並更新顯示
+incrementBtn.addEventListener('click', function() {
+  counterInput.value = parseInt(counterInput.value) + 1;
+  updateResult();
+});
+
+decrementBtn.addEventListener('click', function() {
+  counterInput.value = Math.max(0, parseInt(counterInput.value) - 1); // 確保數值不會小於 0
+  updateResult();
+});
+
+incrementBtn2.addEventListener('click', function() {
+  counterInput2.value = parseInt(counterInput2.value) + 1;
+  updateResult();
+});
+
+decrementBtn2.addEventListener('click', function() {
+  counterInput2.value = Math.max(0, parseInt(counterInput2.value) - 1); // 確保數值不會小於 0
+  updateResult();
+});
+
+// 初始更新
+updateResult();
+    </script>
 
 
 
