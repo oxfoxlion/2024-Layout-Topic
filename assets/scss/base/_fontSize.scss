@@ -78,14 +78,15 @@
         font-size: 16px;
     }
 }
-
-// .font-size-h7{
-//     font-size: 14px;
-//     line-height: 1.2;
-//     @include medium{
-//         font-size: 14px;
-//     }
-// }
+//shopping cart price
+.font-size-h7{
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+    @include medium{
+        font-size: 20px;
+    }
+}
 
 // .font-size-f1{
 //     font-size: 40px;

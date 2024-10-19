@@ -57,8 +57,8 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// header隱藏
-// 選取 header 和區塊
+// Logo隱藏
+// 選取 logo和區塊
 const navbarBrand = document.getElementById('navbar-brand');
 const navbarBrandFade = document.getElementById('navbar-brand-fade');
 
@@ -97,3 +97,4 @@ document.getElementById('toggleRemove').addEventListener('click', function () {
     targetButton.classList.add('active');
   }
 });
+
